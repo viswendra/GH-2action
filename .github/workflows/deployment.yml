@@ -13,6 +13,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
   Deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
